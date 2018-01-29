@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<!--
+@author  Supun Samaraweera
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Draw Outlines of Objects</title>
+
+        <link href="css/shared.css" rel="stylesheet" type="text/css"/>
+        <link href="css/examples.css" rel="stylesheet" type="text/css"/>
+
+        <script src="lib/easeljs-NEXT.js"></script>
+        <script src="lib/get_outline_shape_v1.0.js"></script>
+
+        <script>
+
+            /**
+             * @author  Supun Samaraweera
+             * @version 1.0
+             * @since   2018-01-19 
+             */
+
+            var img;
+            var outlineStage;
+            var outlineShape;
+            var imgCanvas, outlineCanvas, overlapCanvas;
+
+            /**
+             * Call on loading the page
+             */
+            function init() {
+                //Image to load
+                img = new Image();
+                img.onload = handleImageLoad;
+				
+				img.src = "assets/image-01.png"; // Test white color PNG
+				//img.src = "assets/image-01-transp.png"; // Test transparen PNG 
+
+                // Initiate all the canvas
+                imgCanvas = 'imgCanvas';
+                outlineCanvas = 'outlineCanvas';
+                overlapCanvas = 'overlapCanvas';
+            }
+
+            /**
+             * Set image in image canvas and initiate outline drawing
+             */
+            function handleImageLoad() {
+                // Draw selected image
+                document.getElementById(imgCanvas).getContext('2d').drawImage(img, 0, 0, 150, 150);
+
+                // Draw outline for selected image (Background is white #FFFFFF)
+                outlineShape = drawOutline(IMG_BASE_COLOR_WHITE);
+				
+				// Draw outline for selected image (Background is fully transparent)
+				//outlineShape = drawOutline(IMG_BASE_COLOR_FULLY_TRANSPARENT);
+
+                // Stage for draw outline for given shapes
+                outlineStage = new createjs.Stage(outlineCanvas);
+                outlineStage.addChild(outlineShape);
+
+                // Draw final outline
+                createjs.Ticker.on("tick", outlineStage);
+            }
+			
+        </script>
+		
+    </head>
+
+    <body onload="init();">
+        <header>
+            <h1>Draw Lines</h1>
+
+            <p>Select Image to draw the outline</p>
+        </header>
+
+        <div>
+            <canvas id="imgCanvas" width="150" height="150"></canvas>
+            <canvas id="outlineCanvas" width="150" height="150"></canvas>
+        </div>
+    </body>
+</html>
