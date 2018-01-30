@@ -13,7 +13,6 @@ In this given solution, I have tried to scan an image canvas pixel by pixel and 
 The solution was tested as a Java swing application and as a web page with JavaScript.
 
 Working html/js solution file tree is as below,
-```
   - assets
       image-01.png
       image-01-transp.png
@@ -24,7 +23,6 @@ Working html/js solution file tree is as below,
       easeljs-NEXT.js
       get_outline_shape_v1.0.js
   - draw_outliner.html 
-```
 
  
 
