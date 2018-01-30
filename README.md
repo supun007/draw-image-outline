@@ -14,15 +14,15 @@ The solution was tested as a Java swing application and as a web page with JavaS
 
 Working html/js solution file tree is as below,
   - assets
-      image-01.png
-      image-01-transp.png
+    * image-01.png
+    * image-01-transp.png
   - css
-      examples.css
-      shared.css
+    * examples.css
+    * shared.css
   - lib
-      easeljs-NEXT.js
-      get_outline_shape_v1.0.js
-  - draw_outliner.html 
+    * easeljs-NEXT.js
+    * get_outline_shape_v1.0.js
+  - draw_outliner.html
 
  
 
