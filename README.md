@@ -44,4 +44,9 @@ To manupulate the image outline via pixel scaning _`get_outline_shape_v1.0.js`_ 
 -	The main advantage of this solution is, this can be use any type of image including transparent or opaque images.
 -	Outline shape can be separately draw in any canvas.
 -	Performance of the algorithm is slow since loads of pixels have to be scan.
--	Shape outline is not very smooth as in the original image.  
+-	Shape outline is not very smooth as in the original image.
+
+### Future Enhancements
+-	Smoothness of outline shape can be more finetune by drawing more offset pixels and altering the algorithm to draw more accurate lines.
+-	Instead of considering only with transparent and white backgrounds separately, this can be enhancing to automatically determine and adjust the based background color (any color or opaque level).
+
