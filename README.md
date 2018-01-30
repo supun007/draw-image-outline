@@ -2,7 +2,7 @@
 For a given image (transparent or white back ground), to find out the outline of the visible edges is little tricky since each and every pixel have to be assess to get a smooth result.
 
 ### Best solution
-So far the best algorithm to determine the outlines of an image is Marching squares algorithm.
+So far, the best algorithm to determine the outlines of an image is Marching squares algorithm.
 >https://en.wikipedia.org/wiki/Marching_squares
 
 There are lot of implementation of this algorithm hence I haven’t tried to re-engage with the same solution. Below is the results of my effort and the working example is available.
@@ -24,14 +24,16 @@ Working html/js solution file tree is as below,
     * get_outline_shape_v1.0.js
   - draw_outliner.html
   
- **NOTE:**_This example was purely based on html5, JavaScript and was using easeljs-NEXT.js library to draw canvas images and draw lines_ 
+ **NOTE:**_This example was purely based on html5, JavaScript and is using `easeljs-NEXT.js` library to draw canvas images and draw lines_ 
  
  ### Final Result
  
- To manupulate the image outline via pixel scaning _get_outline_shape_v1.0.js_ was the final outcome.
+ To manupulate the image outline via pixel scaning _`get_outline_shape_v1.0.js`_ was the final outcome.
  
- In the _draw_outliner.html_ file, _init()_ js function is initialising the image drawing in the two html canvases namely "imgCanvas" and "outlineCanvas".
+ In the _`draw_outliner.html`_ file, _init()_ js function is initialising the image drawing in the two html canvases namely "imgCanvas" and "outlineCanvas".
+ 
  _handleImageLoad()_ funtion is loading iniial given basic image into "imgCanvas" and then calling the _drawOutline(BASE_COLOR)_ fuction to get the outlines of the image as a shape object.
+ 
  
 
  
