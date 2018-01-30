@@ -38,4 +38,10 @@ To manupulate the image outline via pixel scaning _`get_outline_shape_v1.0.js`_ 
  
 - IMG_BASE_COLOR_WHITE or IMG_BASE_COLOR_FULLY_TRANSPARENT are the currently available parameters to the _drawOutline()_. If we use fully transparent image in the init(), then use IMG_BASE_COLOR_FULLY_TRANSPARENT as the parameter and if we use image with a white background then use IMG_BASE_COLOR_WHITE.
 
-**NOTE:**_To load the page, it will take a little time since the image pixel scanning algorithm is continuously looping trough the image pixels. Page loading will be depending on the client machine performance_ 
+**NOTE:**_To load the page, it will take a little time since the image pixel scanning algorithm is continuously looping trough the iterations. Page loading will be depending on the client machine performance_ 
+
+### Pros & Cons
+-	The main advantage of this solution is, this can be use any type of image including transparent or opaque images.
+-	Outline shape can be separately draw in any canvas.
+-	Performance of the algorithm is slow since loads of pixels have to be scan.
+-	Shape outline is not very smooth as in the original image.  
