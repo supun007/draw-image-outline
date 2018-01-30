@@ -37,4 +37,5 @@ To manupulate the image outline via pixel scaning _`get_outline_shape_v1.0.js`_ 
  - _handleImageLoad()_ funtion is loading iniial given basic image into "imgCanvas" and then calling the _drawOutline(BASE_COLOR)_ fuction to get the outlines of the image as a shape object.
  
 - IMG_BASE_COLOR_WHITE or IMG_BASE_COLOR_FULLY_TRANSPARENT are the currently available parameters to the _drawOutline()_. If we use fully transparent image in the init(), then use IMG_BASE_COLOR_FULLY_TRANSPARENT as the parameter and if we use image with a white background then use IMG_BASE_COLOR_WHITE.
- 
+
+**NOTE:**_To load the page, it will take a little time since the image pixel scanning algorithm is continuously looping trough the image pixels. Page loading will be depending on the client machine performance_ 
