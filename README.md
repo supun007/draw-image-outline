@@ -1,4 +1,4 @@
-# Creately Challange - Find outlines of shape
+# Creately Challenge - Find outlines of shape
 For a given image (transparent or white back ground), to find out the outline of the visible edges is little tricky since each and every pixel have to be assess to get a smooth result.
 
 #### Best solution
@@ -23,6 +23,8 @@ Working html/js solution file tree is as below,
     * easeljs-NEXT.js
     * get_outline_shape_v1.0.js
   - draw_outliner.html
+  
+ **NOTE:**_This example was purely based on html5, JavaScript and was using easeljs-NEXT.js library to draw canvas images and draw lines_ 
 
  
 
