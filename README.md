@@ -28,13 +28,15 @@ Working html/js solution file tree is as below,
  
  ### Final Result
  
- To manupulate the image outline via pixel scaning _`get_outline_shape_v1.0.js`_ was the final outcome.
+ To manupulate the image outline via pixel scaning _`get_outline_shape_v1.0.js`_ was the final outcome. `draw_outliner.html` is the impletation of the working solution.
  
- In the _`draw_outliner.html`_ file, _init()_ js function is initialising the image drawing in the two html canvases namely "imgCanvas" and "outlineCanvas".
+ ### Steps to run
  
- _handleImageLoad()_ funtion is loading iniial given basic image into "imgCanvas" and then calling the _drawOutline(BASE_COLOR)_ fuction to get the outlines of the image as a shape object.
+ - In the _`draw_outliner.html`_ file, _init()_ js function is initialising the image drawing in the two html canvases namely "imgCanvas" and "outlineCanvas".
  
+ - _handleImageLoad()_ funtion is loading iniial given basic image into "imgCanvas" and then calling the _drawOutline(BASE_COLOR)_ fuction to get the outlines of the image as a shape object.
  
+
 
  
 
