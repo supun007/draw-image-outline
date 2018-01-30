@@ -9,10 +9,11 @@ There are lot of implementation of this algorithm hence I haven’t tried to re-
 
 ### Workaround 
 In this given solution, I have tried to scan an image canvas pixel by pixel and then determine which pixel to consider as an outline pixel. Instead of scanning the whole image, the algorithm is only scanning until finding a different pixel than the given based color which is reducing the performance cost.
+
 The workaround was tested as a Java swing application and as a web page with JavaScript. 
 Given html/js based example was develop as a final working solution.
   
- **NOTE:**_This example was purely based on html5, JavaScript and is using `easeljs-NEXT.js` library to draw canvas images and draw lines_ 
+ **NOTE:**_This example was purely based on html5, JavaScript and is using only `easeljs-NEXT.js` library to draw canvas images and draw the lines_ 
  
  ### Final Result
  
